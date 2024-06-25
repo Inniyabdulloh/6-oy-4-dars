@@ -1,0 +1,41 @@
+.container {
+    justify-content: center;
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-color:#43ff30 ;
+    flex-flow: row wrap;
+}
+
+.content {
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.black {
+    background-color: black;
+}
+
+.container:hover {
+    flex-direction: column;
+}
+
+.container:active {
+    flex-direction: row;
+}
+.container:active .red{
+    order:1;
+    align-self: end;
+}
+
+
